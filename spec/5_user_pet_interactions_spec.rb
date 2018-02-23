@@ -125,6 +125,7 @@ describe "User - Neopet Interactions" do
       @gabriela.feed_neopet_by_name("Shiloh")
       expect(@shiloh.happiness).to eq(10)
       @bruce.happiness = 3
+      #binding.pry()
       @gabriela.feed_neopet_by_name("Bruce")
       expect(@bruce.happiness).to eq(5)
     end

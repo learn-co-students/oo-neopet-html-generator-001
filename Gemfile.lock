@@ -4,9 +4,9 @@ GEM
     coderay (1.1.0)
     diff-lcs (1.2.5)
     method_source (0.8.2)
-    mini_portile (0.6.1)
-    nokogiri (1.6.4.1)
-      mini_portile (~> 0.6.0)
+    mini_portile2 (2.3.0)
+    nokogiri (1.8.2)
+      mini_portile2 (~> 2.3.0)
     pry (0.10.1)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -32,3 +32,6 @@ DEPENDENCIES
   nokogiri
   pry
   rspec
+
+BUNDLED WITH
+   1.16.1
