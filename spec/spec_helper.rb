@@ -4,6 +4,7 @@ require_relative "../lib/models/item.rb"
 
 require 'fileutils'
 require 'pry'
+require 'nokogiri'
 
 RSpec.configure do |config|
   config.order = 'default'

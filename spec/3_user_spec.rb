@@ -55,9 +55,9 @@ describe "User" do
 
   describe "#select_pet_name" do
     it "uses the PET_NAMES array to choose a unique pet name" do
-      modified_names = ["Angel", "Baby", "Bailey", "Bella", "Buddy", "Charlie", "Chloe", "Coco", "Lily", "Lucy", "Maggie", "Max", "Molly", "Oliver", "Shadow", "Sophie", "Sunny", "Tiger"]
+      modified_names = ["Angel", "Baby", "Bailey", "Bella", "Buddy", "Charlie", "Chloe", "Coco", "Daisy", "Lily", "Lucy", "Maggie", "Max", "Molly", "Oliver", "Rocky", "Shadow", "Sophie", "Sunny", "Tiger"]
       modified_names.each {|n| mandy.neopets << Neopet.new(n)}
-      expect(mandy.select_pet_name).to satisfy {|s| ["Daisy","Rocky","Bandit"].include?(s) }
+      expect(mandy.select_pet_name).to satisfy {|s| modified_names.include?(s) }
     end
   end
 
